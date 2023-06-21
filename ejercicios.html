@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/ejercicios.css">
+    <title>Ejercicios</title>
+    <link rel="shortcut icon" href="imagenes/ms-icon-310x310.png" type="image/x-icon">
+</head>
+<body>
+    <div class="menu">
+        
+        <ul>
+            <li> <a id="html" href="html.html">HTML</a></li>
+            <li> <a id="css" href="css.html">CSS</a> </li>
+            <li><a href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>  </li>
+            <li> <a id="js" href="javascript.html">JavaScript</a></li>
+            <li> <a id="bn" href="ejercicios.html">Ejercicios</a> </li>
+        </ul>
+
+    </div>
+
+    <h1>Ejercicos</h1>
+    <div class="ejercicios">
+
+        <p>Number</p><input type="text" id="number" maxlength="5">
+        <input type="button" value="Comprobar" onclick="number1()">
+        <script>
+            function number1(){
+                var res = "";
+                res = document.getElementById("number").value;
+                if(isNaN(res)){
+                    alert("El valor ingresado no es numerico");
+                } else alert("correcto");
+            }
+        </script>
+    </div>
+
+<div class="ejercicios">
+
+        <p>String</p><input type="text" id="cadena" maxlength="5">
+        <input type="button" value="Comprobar" onclick="cadena1()">
+        <script>
+            function cadena1(){
+                var res = "";
+                res = document.getElementById("cadena").value;
+                if(isNaN(res)){
+                    alert("correcto");
+                } else alert("El valor ingresado no es valido");
+            }
+        </script>
+</div>
+
+    <div class="ejercicios">
+        <p>Cambia el color del "h1" a rojo</p>
+        <p>
+            h1{ <br>
+                color: <input maxlength="5" type="text" id="demo"> <br>
+            }; <br>
+        </p>
+        <input type="button" value="Comprobar" onclick="resultado()">
+
+    <script>
+        function resultado(){
+            var res = "";
+            res = document.getElementById("demo").value;
+            if(res == "rojo"  || res == "red"){
+                alert("correcto");
+            } else alert("Esta mal");
+        }
+    </script>
+    </div>
+  
+    <div class="ejercicios">
+        <p>Ingresa el operador aritmetico de suma</p>
+
+
+  <input maxlength="5" type="text" id="suma"> <br>
+ <input type="button" value="Comprobar" onclick="suma1()">
+
+    <script>
+        function suma1(){
+            var res = "";
+            res = document.getElementById("suma").value;
+            if(res == "+" ){
+                alert("correcto");
+            } else alert("Esta mal");
+        }
+    </script>
+    </div>
+
+    <div class="ejercicios">
+        <p>Ingresa el operador aritmetico de resta</p>
+
+
+  <input maxlength="5" type="text" id="resta"> <br>
+ <input type="button" value="Comprobar" onclick="resta1()">
+
+    <script>
+        function resta1(){
+            var res = "";
+            res = document.getElementById("resta").value;
+            if(res == "-" ){
+                alert("correcto");
+            } else alert("Esta mal");
+        }
+    </script>
+    </div>
+
+<div class="ejercicios">
+        <p>Ingresa el bucle ideal cuando se conoce la cantidad exacta de veces que se desea repetir un bloque de código.</p>
+
+
+  <input maxlength="5" type="text" id="for"> <br>
+ <input type="button" value="Comprobar" onclick="for1()">
+
+    <script>
+        function for1(){
+            var res = "";
+            res = document.getElementById("for").value;
+            if(res == "for" ){
+                alert("correcto");
+            } else alert("Esta mal");
+        }
+    </script>
+    </div>
+
+    <div class="ejercicios">
+        <p>Ingresa el bucle para cuando la condición se verifica después de cada iteración.</p>
+
+
+  <input maxlength="8" type="text" id="do"> <br>
+ <input type="button" value="Comprobar" onclick="do1()">
+
+    <script>
+        function do1(){
+            var res = "";
+            res = document.getElementById("do").value;
+            if(res == "do-while" ){
+                alert("correcto");
+            } else alert("Esta mal");
+        }
+    </script>
+    </div>
+
+    <div class="ejercicios">
+        <p>Ingresa el bucle que ejecuta repetidamente un bloque de código mientras se cumpla una condición específica</p>
+
+
+  <input maxlength="5" type="text" id="doo"> <br>
+ <input type="button" value="Comprobar" onclick="doo1()">
+
+    <script>
+        function doo1(){
+            var res = "";
+            res = document.getElementById("doo").value;
+            if(res == "do" ){
+                alert("correcto");
+            } else alert("Esta mal");
+        }
+    </script>
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>

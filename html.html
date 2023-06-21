@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/html.css">
+    <link rel="shortcut icon" href="imagenes/ms-icon-310x310.png" type="image/x-icon">
+    <title>HTML</title>
+</head>
+<body>
+    <div class="menu">
+        
+        <ul>
+            <li> <a id="html" href="html.html">HTML</a></li>
+            <li> <a id="css" href="css.html">CSS</a> </li>
+            <li><a href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>  </li>
+            <li> <a id="js" href="javascript.html">JavaScript</a></li>
+            <li> <a id="bn" href="ejercicios.html">Ejercicios</a> </li>
+        </ul>
+
+    </div>
+
+    <h1>Introduccion</h1>
+    <p>
+        HTML (HyperText Markup Language) es un lenguaje fundamental para la creación de sitios web. Con sus etiquetas y estructura jerárquica, HTML permite definir la apariencia y el contenido de una página en línea. Cada etiqueta desempeña un papel específico, desde encabezados y párrafos hasta imágenes y enlaces. Mediante el uso de atributos, se puede personalizar aún más el estilo y el comportamiento de los elementos. La semántica de HTML asegura una mejor accesibilidad y facilita la indexación por parte de los motores de búsqueda. Con HTML como base, los diseñadores y desarrolladores web pueden dar vida a sus ideas y brindar experiencias interactivas a los usuarios en todo el mundo.
+    </p>
+    <br>
+
+    <h1>Basico</h1>
+    <p>
+        Primero veremos lo mas fundamental de html. <br>
+        Para empezar a escribir en este lenguaje primero tenemos que avisar al programa que vamos a escribir en HTML, eso lo hacemos con "!DOCTYPE", una etiqueta, antes de continuar tienen que saber que todos los codigos o como se conocen "etiquetas" empiezan usando el signo menor que y se cierra con el mayor que, pero para cerrar una etiqueta se usa esa misma etiqueta pero con un "/" al lado derecho del menor que, aunque hay algunas exepciones los cuales se usan sin cerrarlo como el "!DOCTYPE". despues de eso ponemos la etiqueta "head" y despues de ese va el body y estos dos van dentro de la etiqueta html.
+    </p>
+    <br>
+
+    <h1>etiquetas</h1>
+
+    <table border="1">
+        <tr>
+            <th>etiqueta</th>
+            <th>Definicion</th>
+        </tr>
+        <tr>
+            <td>p</td>
+            <td>Esta etiqueta sirve para agregar un parrafo al documento html</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>define un hipervinculo, naturalmente va con el atributo "href"</td>
+        </tr>
+        <tr>
+            <td>img</td>
+            <td>con el podemos poner una imagen en la pagina</td>
+        </tr>
+        <tr>
+            <td>h1 - h6</td>
+            <td>Estos son para crear titulos subtitulos y cada una con un menor tamaño</td>
+        </tr>
+        <tr>
+            <td>br</td>
+            <td>Este es para hacer saltos de linea en la pagina</td>
+        </tr>
+        <tr>
+            <td>!DOCTYPE</td>
+            <td>con este definimos que el documento es html</td>
+        </tr>
+        <tr>
+            <td>html</td>
+            <td>este es el que va a tener todo el codigo</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>con este definimos la cabeza o la pestaña que muestra el navegador</td>
+        </tr>
+        <tr>
+            <td>body</td>
+            <td>este tendra todo lo que se va a mostrar en la pagina</td>
+        </tr>
+        <tr>
+            <td>div</td>
+            <td>con este hacemos diviciones en la pagina para tener bloques en siertas posiciones de la pagina segun como la queramos</td>
+        </tr>
+    </table>
+    <br>
+    <p>
+        Estas serian las etiquetas mas basicas que se usan a la hora de crear una pagina, pero hay una cantidad aun mayor de etiquetas que cubren diferentes necesidades que tengamos a la hora de crear el sitio, como etiquetas que cambian el tipo de letra que se usa, etiquetas para crear tablas como la tabla con las etiquetas, tambien hay etiquetas usadas para diseñar formularios, etc.
+    </p>
+    <br>
+    <h1>Cabezeras</h1>
+    <p>
+        estas son las diferentes cabeceras que hay
+    </p>
+        <h1>Cabezera 1</h1>
+        <h2>Cabezera 2</h2>
+        <h3>Cabezera 3</h3>
+        <h4>Cabezera 4</h4>
+        <h5>Cabezera 5</h5>
+        <h6>Cabezera 6</h6>
+    <br>
+    <h1>Link</h1>
+    <p>
+        aqui un ejemplo de la etiqueta a con el atributo href que te regresa a la pagina de inicio
+    </p>
+    <br>
+        <a href="index.html">Volver al inicio</a>
+    <br>
+    <h1>imagenes</h1>
+    <p>
+        aqui ponemos de ejemplo para la etiqueta img que usa el atributo scr para buscar una imagen, la que hicimos para la pagina para ser exactos, que por si llegara a no cargar, al usar un atributo llamado alt podemos poner un texto en donde podemos describir brevemente que hay en la imagen
+    </p>
+    <br>
+        <img src="imagenes/logo.png" alt="logo de la pagina">
+    <br>
+    <h1>Codigo</h1>
+    <p>
+        para mostrar como se ve el codigo HTML vamos a ponder dos fragmentos de este mismo codigo
+    </p>
+    <br>
+        <img src="imagenes/codigo html.png" alt="codigo HTMl de esta pagina primera parte" style="width: 1000px; margin-left: 20%;">
+    <br>
+        <img src="imagenes/codigo html 1.png" alt="codigo HTMl de esta pagina segunda parte" style="width: 1000px; margin-left: 20%;">
+    <br>
+    <div style="background-color: rgb(0, 221, 255); padding: 10px;" >
+        <img src="imagenes/logo css.png" alt="" style="margin-left: 0%; width:110px; height: 120px;"><br>
+            <button class="bt2"><a href="css.html">Ir</a></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/css.css">
+    <title>CSS</title>
+    <link rel="shortcut icon" href="imagenes/ms-icon-310x310.png" type="image/x-icon">
+</head>
+<body background="imagenes/fondo css.jpg">
+    <div class="menu">
+        
+        <ul>
+            <li> <a id="html" href="html.html">HTML</a></li>
+            <li> <a id="css" href="css.html">CSS</a> </li>
+            <li><a href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>  </li>
+            <li> <a id="js" href="javascript.html">JavaScript</a></li>
+            <li> <a id="bn" href="ejercicios.html">Ejercicios</a> </li>
+        </ul>
+
+    </div>
+    <br>
+    <h1>INTRODUCCION</h1>
+
+    <p> <em>
+        CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para dar estilo y mejorar la apariencia de las páginas web. Con CSS, se pueden controlar colores, fuentes, márgenes, tamaños y posicionamiento de elementos HTML. Proporciona una forma eficiente de separar la estructura de una página web de su presentación visual, lo que permite una fácil modificación y mantenimiento del sitio. CSS utiliza selectores para apuntar a elementos específicos y aplicar reglas de estilo. También ofrece características avanzadas como animaciones, transformaciones y diseño responsivo, lo que permite crear diseños modernos y atractivos. Es una herramienta fundamental para los desarrolladores web que desean personalizar y embellecer sus sitios con flexibilidad y control precisos.
+    </em> </p>
+    <br>
+    <h2>ESTILOS</h2>
+    <p style="text-align: left;">
+        Ahora te mostraremos lo que puedes alterar con CSS:
+    </p>
+    <div class="lista">
+    <ul>
+        <li id="li1">Color de texto y fondo: permite establecer el color del texto y el fondo de un elemento.</li>
+        <li id="li2">Tipografía: permite especificar la fuente, tamaño, estilo y espaciado del texto.</li>
+        <li id="li3">Margen y relleno: controla el espacio alrededor y dentro de un elemento.</li>
+        <li id="li4">Bordes: permite establecer el estilo, grosor y color de los bordes de un elemento.</li>
+        <li>Posicionamiento: permite controlar la ubicación y el flujo de los elementos en la página.</li>
+        <li id="li5">Dimensiones: especifica el ancho, alto y tamaño de un elemento.</li>
+        <li id="li6">Alineación de texto: controla la alineación horizontal y vertical del texto.</li>
+        <li id="li7">Listas: permite personalizar el estilo de las listas numeradas y con viñetas.</li>
+        <li>Imágenes de fondo: permite establecer una imagen como fondo de un elemento.</li>
+        <li id="li8">Opacidad: controla la transparencia de un elemento y su contenido.</li>
+        <li id="li9">Animaciones y transiciones: permite crear efectos de animación y transición en los elementos.</li>
+        <li>Diseño responsivo: permite adaptar el diseño de la página a diferentes tamaños de pantalla.</li>
+    </ul>
+    </div>
+    <br>
+    <h1>FORMATO</h1>
+    <p> <em>
+        Como su nombre lo indica este tiene forma de cascada, este puede ir directamente en el archivo HTML con la etiqueta style o como se hizo en este sitio se puede crear un archivo CSS y conectarlo a la pagina HTML con la etiqueta "link" como se muestra en el siguiente ejemplo:
+    </em> </p>
+    <img src="imagenes/link css.png" alt="la etiqueta link conectando con un archivo css">
+    <p> <em>
+        con eso podemos conectarlas y todos los estilos que hagamos modificara la pagina, para usar css tu escribes la etiqueta que quieras alterar o usas una clase o una id que asignaste en alguna etiqueta especifica, despues dentro de llaves pones atributos los cuales quieras cambiar y les vas asignando diferentes valores segun que es lo que requieras cambiar, asi se veria
+    </em> </p>
+    <img src="imagenes/formato css.png" alt="como se ve el codigo css">
+    <br>
+    <h1>CODIGO</h1>
+    <p> <em>
+        Ahora les compartiremos como ve se un archivo css con el codigo usado para esta pagina
+    </em> </p>
+    <br>
+    <img src="imagenes/codigo css.png" alt="el codigo del diseño de la pagina" style="width: 1000px; height: 500px; margin-left: 25%;">
+    <br>
+    <h1>Como agregar estilos</h1>
+    <div>
+        
+        <p>
+            Te presentamos la sintaxis para gregar colores a un documento html, primero se ubica la etiqueta o elemento que se quiera modificar, se abre { } y en su interior escribimos la propiedad y el valor que vamos a modificar.
+        </p>
+        <pre style="color: white; font-size: 20px;display: flex;">
+            h1{   <------------Etiqueta o elemento.
+                color: red; <-------- Propiedad y valor.
+}
+        </pre>
+        <h1 style="color: red; padding: 0; margin: 0;">Hello world</h1>
+
+        <pre style="color: white; font-size: 20px;display: flex;">
+            p{   <------------Etiqueta o elemento.
+                font-size: 30px; <-------- Propiedad y valor.
+}
+        </pre>
+        <p style="font-size: 30px; padding: 0; margin: 0;">Hello world</p>
+
+        <pre style="color: white; font-size: 20px;display: flex;">
+            div{   <------------Etiqueta o elemento.
+                display: flex; <-------- Propiedad y valor.
+}
+        </pre>
+        
+        
+        <div style="display:flex; justify-content: space-evenly;border: none; ">
+            <p style="font-size: 30px;">hello</p>
+            <p style="font-size: 30px;">world</p>
+            <p style="font-size: 30px;">!</p>
+        </div>
+            
+
+    </div>
+    <div style="background-color: rgb(247, 132, 0); padding: 10px; border-radius: 20px;" >
+        <img src="imagenes/logo js.png" alt="" style="margin-left: 0%; width:120px; height: 120px; border: 0; border-radius: 0;"><br>
+        <button class="bt3"><a href="javascript.html">Ir</a></button>
+    </div>
+</body>
+</html>

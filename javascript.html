@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/javascript.css">
+    <link rel="shortcut icon" href="imagenes/ms-icon-310x310.png" type="image/x-icon">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="menu">
+        
+        <ul>
+            <li> <a id="html" href="html.html">HTML</a></li>
+            <li> <a id="css" href="css.html">CSS</a> </li>
+            <li><a href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>  </li>
+            <li> <a id="js" href="javascript.html">JavaScript</a></li>
+            <li> <a id="bn" href="ejercicios.html">Ejercicios</a> </li>
+        </ul>
+
+    </div>
+
+    <h2>Introducción</h2>
+    <p>
+        JavaScript es un lenguaje de programación versátil y ampliamente utilizado en el desarrollo web. Conocido por su capacidad para interactuar con elementos HTML y CSS, JavaScript permite crear aplicaciones web dinámicas e interactivas. Además de su papel principal en la manipulación del contenido de una página web, JavaScript puede hacer mucho más. Con este lenguaje, los desarrolladores pueden responder a eventos del usuario, validar formularios, crear animaciones, implementar efectos visuales, realizar solicitudes a servidores remotos mediante AJAX, crear juegos y aplicaciones móviles híbridas, y desarrollar aplicaciones de lado del servidor utilizando plataformas como Node.js. Además, JavaScript es compatible con una amplia variedad de frameworks y bibliotecas populares como React, Angular y Vue.js, que simplifican el desarrollo de aplicaciones web complejas. Su sintaxis es relativamente sencilla de aprender, lo que facilita su adopción tanto para principiantes como para desarrolladores experimentados. En resumen, JavaScript es un lenguaje esencial en el mundo del desarrollo web moderno y ofrece una amplia gama de posibilidades creativas y funcionales.
+
+    </p>
+    <div class="imagen">
+        <img src="imagenes/js logo.png" alt="">
+
+    </div>
+
+    <h2>Tipos de datos</h2>
+    <p>
+        Números (Number): Representa valores numéricos. (1,2,3,4,5....) <br><br>
+
+Cadenas de texto (String): Representa secuencias de caracteres. ("Hello world")<br><br>
+
+Booleanos (Boolean): Representa valores verdadero (true) o falso (false). (Verdadero  o Falso)<br><br>
+
+Arreglos (Array): Representa una colección ordenada de elementos. ["perro", [gato]....]<br><br>
+
+Objetos (Object): Representa una colección de propiedades y métodos.<br><br>
+
+<div class="imagen1">
+  <img src="imagenes/ms-icon-310x310.png" alt="">
+
+</div>
+
+<pre>
+    let persona = {
+        nombre: "María",
+        edad: 30,
+        profesion: "ingeniera"
+      };
+</pre>
+
+Nulos (Null) y Indefinidos (Undefined): Representan la ausencia de un valor asignado.<br><br>
+
+Funciones (Function): Bloques de código reutilizables que realizan tareas específicas.<br><br>
+<br>
+<pre>
+    function saludar(nombre) {
+        console.log("¡Hola, " + nombre + "!");
+      }
+      
+      function sumar(a, b) {
+        return a + b;
+      }
+</pre>
+
+    </p>
+
+
+    <h2>Declaracion de varibles</h2>
+
+    <p>
+        <h4>Var</h4> 
+        Se usa para crear una variable con un alcance de función o un alcance global, dependiendo de dónde se declare. <br>
+        var x = 10; <br>
+        <h4>Let</h4> 
+        se utiliza para declarar variables con un alcance de bloque. El objetivo principal de let es permitir la declaración de variables que están limitadas a un bloque específico <br>
+
+        let y = 5; <br>
+
+        <h4>Const</h4> 
+        se utiliza para declarar variables que tienen un valor constante, es decir, cuyo valor no puede cambiar después de su asignación inicial. El objetivo principal de const es crear variables inmutables. <br>
+        const PI = 3.14159;
+
+    </p>
+
+    <h2>Condicionales</h2>
+
+    <p>Los condicionales son una parte fundamental de la programación en JavaScript, permitiendo que el flujo del programa tome decisiones basadas en ciertas condiciones. Los condicionales en JavaScript se implementan a través de las estructuras if, else if y else.</p>
+
+    <h4>If - else</h4>
+    <pre>
+        var edad = 18;
+
+if (edad >= 18) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres menor de edad");
+}
+    </pre>
+    <h4>If - else - else if</h4>
+    <pre>
+        var hora = 14;
+
+if (hora < 12) {
+  console.log("Buenos días");
+} else if (hora < 18) {
+  console.log("Buenas tardes");
+} else {
+  console.log("Buenas noches");
+}
+    </pre>
+
+    <h4>Switch</h4>
+    <p>En JavaScript, el switch es una estructura de control que permite evaluar una expresión y ejecutar diferentes bloques de código según el valor de esa expresión. Proporciona una alternativa más legible y concisa en comparación con una serie de declaraciones </p>
+    <pre>
+        var dia = 3;
+var nombreDia;
+
+switch (dia) {
+  case 1:
+    nombreDia = "Lunes";
+    break;
+  case 2:
+    nombreDia = "Martes";
+    break;
+  case 3:
+    nombreDia = "Miércoles";
+    break;
+  // Agrega más casos según necesites
+  default:
+    nombreDia = "Día desconocido";
+}
+
+console.log("Hoy es " + nombreDia);
+    </pre>
+
+    <h4>Comentarios</h4>
+    <p>Los comentarios en JavaScript son elementos de texto que se incluyen en el código fuente para proporcionar información adicional sobre el funcionamiento del programa. Su finalidad principal es mejorar la comprensión, legibilidad y mantenibilidad del código.</p>
+    <pre>
+1.Explicar el código: Los comentarios permiten agregar explicaciones y aclaraciones sobre el propósito y funcionamiento de diferentes secciones de código. Ayudan a los programadores a entender qué hace un fragmento de código específico y cómo se relaciona con el resto del programa.
+
+2. Hacer anotaciones: Los comentarios son útiles para realizar anotaciones y recordatorios durante el desarrollo. Puedes utilizarlos para señalar áreas de mejora, tareas pendientes o ideas para futuras mejoras.
+
+3. Desactivar temporalmente código: Al comentar líneas o bloques de código, puedes desactivar temporalmente su ejecución sin eliminarlo por completo. Esto es útil durante la depuración o cuando deseas probar diferentes partes del programa sin tener que eliminar y volver a escribir el código.
+
+4. Documentar funciones y clases: Los comentarios de documentación son especialmente útiles para describir el propósito, los parámetros, el valor de retorno y cualquier otra información relevante de las funciones y clases. Estos comentarios pueden ser procesados por herramientas de generación de documentación para crear documentación automática y detallada del código.
+    </pre>
+
+    <h4>Operadores aritmeticos</h4>
+    <p>
+        Los operadores aritméticos en JavaScript desempeñan un papel fundamental en el desarrollo de programas que involucran cálculos matemáticos y manipulación de datos numéricos. Aquí tienes la importancia de cada operador aritmético:
+    </p>
+    <pre>
+var resultado = 5 + 3;
+console.log(resultado);
+    </pre>
+
+<pre>
+var resultado = 10 - 4;
+console.log(resultado); 
+</pre>
+
+<pre>
+var resultado = 2 * 5;
+console.log(resultado);
+</pre>
+<pre>
+var resultado = 15 / 3;
+console.log(resultado);
+</pre>
+
+<pre>
+var resultado = 17 % 5;
+console.log(resultado);
+</pre>
+
+<pre>
+var numero = 5;
+numero++; 
+console.log(numero); 
+
+var otroNumero = 10;
+otroNumero--; 
+console.log(otroNumero);
+</pre>
+
+<H4>Demas operadores</H4>
+
+<pre>
+Operadores Aritméticos:
+
+Suma (+)
+Resta (-)
+Multiplicación (*)
+División (/)
+Módulo/Resto (%)
+Incremento (++) y Decremento (--)
+Operadores de Asignación:
+
+Asignación (=)
+Asignación con suma (+=)
+Asignación con resta (-=)
+Asignación con multiplicación (*=)
+Asignación con división (/=)
+Asignación con módulo/resto (%=)
+Operadores de Comparación:
+
+Igualdad (==)
+Desigualdad (!=)
+Estrictamente igual (===)
+Estrictamente desigual (!==)
+Mayor que (>)
+Menor que (<)
+Mayor o igual que (>=)
+Menor o igual que (<=)
+Operadores Lógicos:
+
+Y lógico (&&)
+O lógico (||)
+Negación lógica (!)
+</pre>
+
+<h4>Bucles en JavaScript</h4>
+<p>Los bucles en JavaScript son estructuras de control fundamentales que permiten repetir un bloque de código múltiples veces. Su importancia radica en automatizar tareas repetitivas y procesar conjuntos de datos, ahorrando tiempo y esfuerzo. Los bucles while, do-while y for son utilizados en diferentes situaciones, como el procesamiento de arreglos, cálculos iterativos y recorridos de objetos. Su funcionalidad abarca recorrer elementos, realizar cálculos, validar datos, buscar y comparar, y automatizar tareas. Los bucles ayudan a crear programas eficientes, flexibles y legibles, reduciendo la duplicación de código y mejorando la mantenibilidad. Es importante tener precaución para evitar bucles infinitos y asegurarse de establecer condiciones de salida adecuadas y actualizar variables de control.</p>
+
+<h5>Bucle while</h5>
+<p>
+    El bucle while ejecuta repetidamente un bloque de código mientras se cumpla una condición específica. Comprueba la condición antes de cada iteración.</p>
+
+<pre>
+    var i = 0;
+while (i <= 10) {
+  console.log(i);
+  i += 2;
+}
+</pre>
+
+
+<h5>Bucle do-while</h5>
+<p>El bucle do-while es similar al bucle while, pero la condición se verifica después de cada iteración. Esto garantiza que el bloque de código se ejecute al menos una vez.</p>
+
+<pre>
+    var i = 0;
+    do {
+      console.log(i);
+      i += 2;
+    } while (i <= 10);
+</pre>
+
+
+<h5>Bucle for</h5>
+<p>El bucle for es ideal cuando se conoce la cantidad exacta de veces que se desea repetir un bloque de código. Utiliza una variable de control, una condición de salida y una expresión de incremento o decremento.</p>
+
+<pre>
+    for (var i = 0; i <= 10; i += 2) {
+        console.log(i);
+      }
+</pre>
+
+<div style="background-color: rgb(230, 176, 77); padding: 10px;" >
+  <h1 style="color: white;">Ejercicios</h1>
+  <button class="bt3"><a href="ejercicios.html">Ejercicios</a></button>
+</div>
+
+<style>
+  .bt3{
+    transition-duration: 1s;
+  }
+  .bt3:hover{
+    transform: rotateZ(15deg);
+  }
+  a{
+    text-decoration: none;
+    list-style: none;
+  }
+</style>
+</body>
+</html>
